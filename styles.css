@@ -1,0 +1,309 @@
+/* --- GLOBAL CSS --- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- HEADER CSS --- */
+.header {
+    background: #1f2937;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.logo {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 10px;
+}
+
+.logo p {
+    font-family: 'Kalam', cursive;
+    font-size: 36px;
+    font-weight: 900;
+    color: orange;
+}
+
+.nav {
+    font-size: 18px;
+    color: #e5efeb;
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-shrink: 0;
+}
+
+.nav li:hover {
+    color: #3882f6;
+    cursor: pointer;
+}
+
+/* --- HERO CSS --- */
+.hero {
+    background: #1f2937;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #f9faf8;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #e5efeb;
+    margin-bottom: 30px;
+}
+
+.hero .sign-up {
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.hero .img-box {
+    padding: 20px;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 8px 20px;
+    font-size: 18px;
+    color: #e5efeb;
+    border: 2px solid #e5efeb;
+    border-radius: 10px;
+    background: #3882f6;
+}
+
+.btn:hover {
+    background: #1f2937;
+    cursor: pointer;
+}
+
+/* --- INFO CSS --- */
+.info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1f2937;
+    text-align: center;
+    padding-top: 20px;
+    margin: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    padding: 10px;
+}
+
+.card-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.card {
+    height: 350px;
+    width: 250px;
+}
+
+.card img {
+    border: 5px solid #3882f6;
+    border-radius: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    color: #1f2937;
+    padding: 10px;
+}
+
+/* --- QUOTE CSS --- */
+.crew {
+    background: #e5e7eb;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.crew img {
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border: 5px solid #3882f6;
+}
+
+.crewbox {
+    max-width: 750px;
+    margin-bottom: 50px;
+}
+
+.crewbox p {
+    font-size: 30px;
+    color: #1f2937;
+    text-align: center;
+    padding: 20px;
+}
+
+/* --- CTA CSS --- */
+.brochure {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url(./images/istanbul.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brochure-box {
+    background: #3882f6;
+    opacity: 80%;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brochure-text {
+    text-align: center;
+    color: #e5efeb;
+    padding: 20px 80px 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.brochure-text p {
+    font-size: 18px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form {
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input {
+    background: #3882f6;
+    border-style: none;
+    font-size: 18px;
+    color: #e5e7eb;
+    outline: none;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+input::placeholder {
+    color: #e5e7eb;
+    opacity: 50%;
+}
+
+input::placeholder:hover {
+    opacity: 80%;
+}
+
+#name, #email {
+    text-align:justify;
+    color: #e5e7eb;
+    min-width: 350px;
+}
+
+button {
+    margin: 30px auto;
+    height: 40px;
+    flex-grow: 0;
+}
+
+/* --- FOOTER CSS --- */
+.footer {
+    background: #1f2937;
+    font-size: 18px;
+    color: #e5efeb;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-media {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.social-media li {
+    list-style: none;
+    font-size: 30px;
+    color: #e5efeb;
+}
+
+.social-media li:hover {
+    color: #3882f6;
+}
+
+a {
+    color:#e5e7eb;
+    padding: 20px;
+}
+
+a:hover {
+    color: #3882f6;
+}
